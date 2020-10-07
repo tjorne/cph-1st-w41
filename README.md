@@ -45,7 +45,7 @@ Please note, that it is quite unusual to have a Main class in each package, yet 
 
 ## Task 2: Composition
 2.a Create a Room.java class with the following fields (use appropriate types): 
-- Walls
+- Walls.java
 - numberOfDoors
 - numberOfLamps
 - numberOfWindows
