@@ -10,6 +10,7 @@ Please note, that it is quite unusual to have a Main class in each package, yet 
 1.a Create a Driver.java class with the following private fields (use appropriate types): 
 - Name
 - Age
+
 1.b Create a constructor that populates all the fields above. 
 
 1.c Create a Car.java class with the following private fields (use appropriate types):
@@ -18,16 +19,21 @@ Please note, that it is quite unusual to have a Main class in each package, yet 
 - Year
 - BodyStyle
 - Driver
+
 1.d Create a constructor, that populates all the fields above, except the Driver. 
+
 1.e Create a Getter and a Setter for the Driver variable.
 
 1.f override the toString method in the Car class, returning:
      "Make: "+make+". Model: "+model+ " ("+ year + "), BodyStyle: "+bodyStyle
+     
 1.g override the toString method in the Driver class, returning: 
     " is driven by "+name
 
 1.h In the main method, instantiate a new Driver, populating the fields with your own name and age. 
+
 1.i In the main method, instantiate a new car, populating the field with whatever values you see fit. 
+
 1.j In the main method, assign the driver to the car created, using the setter method created in step 1.e
 
 1.k print the toString method of the car you've created followed by the toString method of the driver. 
@@ -43,23 +49,29 @@ Please note, that it is quite unusual to have a Main class in each package, yet 
 - numberOfDoors
 - numberOfLamps
 - numberOfWindows
-1.b Create a constructor that populates all the fields above. 
+
+1.b Create a constructor that populates all the fields above.
+
 1.c Create getters() for each of the fields above. 
 
 1.d Create a Building.java class with the following fields (use appropriate types):
-- Rooms (make sure to use the \'final\' keyword here).
+- Rooms (make sure to use the \'final\' keyword here .(Tess: - if you have ever heard about it. The code should work either way ;).
 - numberOfBathrooms
 - numberOfFloors
 - isOfficeBuilding
 
 1.e Create a constructor that populates all the fields above. 
+
 1.f Create getters() for each of the fields above. 
     
 1.g In your main method, instantiate at least three different rooms. 
+
 1.h Add the three rooms to a collection (preferably of the same data type used for the "Rooms" field in your Building.java class).
+
 1.i In your main method, instantiate a new building.
 
 1.j print the total number of lamps in the entire building.
+
 1.k make an if statement that checks if numberOfFloors > number of Rooms. if true, then print "This is an odd building". 
 
 
