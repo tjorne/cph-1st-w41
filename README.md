@@ -75,34 +75,23 @@ Please note, that it is quite unusual to have a Main class in each package, yet 
 2.k make an if statement that checks if numberOfFloors > number of Rooms. if true, then print "This is an odd building". 
 
 
+##Task 3: (sorry, switching language now) ArrayList og Objekter
 
-## Task 3: Interfaces & Inheritance 
-Create an interface called AnimalSound.java 
-    - declare a method called "makeSound();" in it. 
+3.a Lav en klasse, Customer, med attributterne:
+String firstName
+String lastName
+String username
+int id
 
-Create Animal.java
-- give it a private field called numberOfLegs using an appropriate data type. 
-- add a constructor, that sets the above field. 
-- add a getter for the numberOfLegs field. 
-- have it implement the interface AnimalSound
-- the makeSound() method must print the following: "Undefined animal makes no sound."
+3.b Klassen skal have en konstruktor der tager et parameter med kundens navn og brugernavn. Sørg også for at give konstruktoren et unikt id (unikt for klassen, Hint: brug en static counter). Giv klassen en toString() metode, der printer kundens detaljer pænt ud. Gør alle klassens felter private, og tilføj getters().
 
-Create Zoo.java:
-- add a Collection of the type Animal called "animals", e.g. an ArrayList (make sure to initialize it).
-- add a method called makeAllSounds(). This must loop through all elements in the above collection and call the makeSound() on the element. 
-- add a method called addAnimal() that takes in a new Animal as a parameter and adds it to the animals collection. 
-- add a method called printNumberOfLegs() that loops through all elements in the animals collection and sums up the number of legs before printing ("Total number of legs in my zoo: "+legs);
+3.c Skriv en Main klasse med en main metode, hvor der oprettes en beholder af typen ArrayList, som du kalder 'customers'. Denne skal være erklæret som static global variabel - dvs tilgængelig udenfor main metoden. I customers skal du placere 6 instanser af Customer typen. 
+(Du kan oprette instanserne først, og så add'e dem til array'et. Du kan også adde og instantiere i samme linie.)
 
-Create animals: 
-- You are to create 3 animals of your own choosing. 
-- Each animal must have their own class that extends the Animal class. 
-- The constructor of each of the animals must take in an int as a parameter (numberOfLegs) and call super(numberOfLegs) in its body. 
-- Two of the animals must @Override the makeSound method, printing a line with what the specific animal sound like. e.g. ("Tiger goes grrrr"); 
-- The last animal must not override the makeSound method. 
+3.d Skriv en metode i Main kaldet printCustomers(), hvor du printer alle kunderne ud ved at gennemløbe 'customers' med et ’for each’ loop. Test metoden fra main ved at kalde den.
 
-In the Main.java: 
-- Create a new instance of Zoo
-- Create instances of each of your 3 animals. 
-- Call the zoo.addAnimal() method with each of your 3 animal objects. 
-- Call the zoo.makeSounds() method. 
-- Call the zoo.printNumberOfLegs() method. 
+3.e Skriv en metode i Main kaldet findCustomer(), som tager et id som parameter og returnerer et Customer objekt. Metoden skal gennemløbe customer arrayListen og for hver iteration evaluere om customers.get(i) har et id som er identisk med det id metoden blev kaldt med. Test metoden fra main ved at kalde den: Customer c = findCustomer(4);
+
+
+
+
